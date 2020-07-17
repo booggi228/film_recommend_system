@@ -7,32 +7,32 @@ click==7.1.2
 confuse==1.1.0
 cryptography==2.9.2
 Flask==1.1.2
-idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+#idna @ file:///tmp/build/80754af9/idna_1593446292537/work
 ImageHash==4.1.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
-joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
-MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
+#joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
+#MarkupSafe @ file:///C:/ci/markupsafe_1594405949945/work
 mkl-fft==1.1.0
 mkl-random==1.1.1
 mkl-service==2.3.0
 mysql-connector-python==8.0.20
 numpy==1.18.5
-pandas @ file:///C:/ci/pandas_1592841747005/work
+#pandas @ file:///C:/ci/pandas_1592841747005/work
 pandas-profiling==2.8.0
 phik==0.10.0
-pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
-pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
-PySocks @ file:///C:/ci/pysocks_1594394709107/work
+#pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+#pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+#PySocks @ file:///C:/ci/pysocks_1594394709107/work
 python-dateutil==2.8.1
 pytz==2020.1
 requests==2.23.0
-scikit-learn @ file:///C:/ci/scikit-learn_1592847564598/work
-scipy @ file:///C:/ci/scipy_1592916958183/work
+#scikit-learn @ file:///C:/ci/scikit-learn_1592847564598/work
+#scipy @ file:///C:/ci/scipy_1592916958183/work
 six==1.15.0
 soupsieve==2.0.1
 tangled-up-in-unicode==0.0.6
-threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+#threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
 urllib3==1.25.9
 visions==0.4.4
 Werkzeug==1.0.1
