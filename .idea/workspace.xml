@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b2ec43-5afc-4109-9fcf-bc391acf3b3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pre_compile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,10 +97,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594984360969" />
-    <state x="736" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594901219141">
+    <state x="736" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594987975891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="736" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594901219141" />
+    <state x="736" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594987975891" />
     <state x="717" y="273" key="#xdebugger.XInspectDialog" timestamp="1594806926450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
