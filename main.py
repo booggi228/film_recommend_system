@@ -3,48 +3,22 @@ import numpy as np
 from flask import Flask, render_template, request
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import pickle
 
+df = pd.read_csv('end_data.csv')
 
-df = pd.read_csv('cleaned_data.csv')
-
-# remove symbols and adding a new column
-
-df['movie'] = df['movie'].apply(lambda x: x.replace(':', '').replace('.', '').replace('-', '').replace('/', '').replace(',', '').lower().strip())
-
-df['actors'] = df['actors'].astype(str)
-
-df['description'] = df['description'].apply(lambda x: x.replace(',', '').replace('.', '').lower().strip())
-
-df['actors'] = df['actors'].apply(lambda x: x.replace(',', '').replace('.', '').strip())
-df['actors'] = df['actors'].astype(str)
-
-df['imdb'] = df['imdb'].astype(str)
-
+df['imdb_score'] = df['imdb_score'].astype(str)
 df['year'] = df['year'].astype(str)
-
-df['score'] = 'imdb score'
-
-df['imdb_score'] = df['score'].str.cat(df['imdb'], sep=" ")
-
-df['genre'] = df['genre'].apply(lambda x: x.strip())
-
-features = ['description', 'genre', 'actors']
-
-# create new column with combined features
-def combine_features(row):
-    return row['description'] + ' ' + row['genre'] + ' ' + row['actors']
-
-df['combined_features'] = df.apply(combine_features, axis=1)
 
 
 # creating a similarity score matrix
 def create_sim():
     # creating a count matrix
-    cv = CountVectorizer(analyzer='word', ngram_range=(1, 2), min_df=0, stop_words='english')
-    count_matrix = cv.fit_transform(df['combined_features'])
+    count_matrix = pickle.load(open('cosine_similarity.pickle', 'rb'))
+
     # creating a similarity score matrix
     sim = cosine_similarity(count_matrix)
-    return sim
+    return df, sim
 
 
 # defining a function that recommends 10 most similar movies
@@ -54,7 +28,7 @@ def recommendation(m):
     try:
         sim.shape
     except:
-        sim = create_sim()
+        df, sim = create_sim()
     # check if the movie is in our database or not
     if m not in df['movie'].unique():
         return('This movie is not in our database.\nPlease check if you spelled it correct.')
