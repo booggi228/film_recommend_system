@@ -7,13 +7,14 @@ import pickle
 
 df = pd.read_csv('end_data.csv')
 
+# changing data types to make line 54 work properly
 df['imdb_score'] = df['imdb_score'].astype(str)
 df['year'] = df['year'].astype(str)
 
 
-# creating a similarity score matrix
+# define a function that creates similarity matrix
 def create_sim():
-    # creating a count matrix
+    # loading count matrix
     count_matrix = pickle.load(open('cosine_similarity.pickle', 'rb'))
 
     # creating a similarity score matrix
@@ -54,11 +55,14 @@ def recommendation(m):
 
         return l
 
+# using Flask web framework to put my app on web
+
 app = Flask(__name__)
 
 @app.route("/")
 def home():
     return render_template('home.html')
+
 
 @app.route("/recommend", methods=['POST', 'GET'])
 def recommend():
