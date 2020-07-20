@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pickle
 
-df = pd.read_csv('end_data.csv')
+df = pd.read_csv('data/end_data.csv')
 
 # changing data types to make line 54 work properly
 df['imdb_score'] = df['imdb_score'].astype(str)
