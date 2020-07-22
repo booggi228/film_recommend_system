@@ -9,5 +9,14 @@
   * Link to my application: https://film-recommend-system.ew.r.appspot.com/  
   
   
-
-
+## About recommend system I used and how it works.  
+  In this project I used content-based recommender system which suggest similar films based on particular keywords. In my case the system uses movie description, actor and director names, genres data to make these recommendations. To achieve this, I used [cosine similarity](https://www.machinelearningplus.com/nlp/cosine-similarity/) metric for all movies to to measure the distance between the embeddings which is needed for finding similarity between two movies. For that I created a new column named `combined_features` in the dataset which includes all the features I want to find the similarity score between items.  
+  
+  
+## How to run the project?
+  * Install all the libraries with command `pip install -r requirements.txt`.   
+  * Clone this repository in your local system.  
+  * Open the command prompt from your project directory and run the command `python main.py`.  
+  * Go to your browser and type http://127.0.0.1:5000/ in the address bar.  
+  * **That's all! Enjoy!**
+  
