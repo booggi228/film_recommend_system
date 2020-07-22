@@ -17,6 +17,6 @@
   * Install all the libraries with command `pip install -r requirements.txt`.   
   * Clone this repository in your local system.  
   * Open the command prompt from your project directory and run the command `python main.py`.  
-  * Go to your browser and type http://127.0.0.1:5000/ in the address bar.  
+  * Go to your browser and type `http://127.0.0.1:5000/` in the address bar.  
   * **That's all! Enjoy!**
   
