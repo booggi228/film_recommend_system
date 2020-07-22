@@ -10,7 +10,7 @@
   
   
 ## About recommend system I used and how it works.  
-   In this project I used content-based recommender system which suggest similar films based on particular keywords. In my case the system uses movie description, actor and director names, genres data to make these recommendations. To achieve this, I used [cosine similarity](https://www.machinelearningplus.com/nlp/cosine-similarity/) metric for all movies to to measure the distance between the embeddings which is needed for finding similarity between two movies. For that I created a new column named `combined_features` in the dataset which includes all the features I want to find the similarity score between items.  
+     In this project I used content-based recommender system which suggest similar films based on particular keywords. In my case the system uses movie description, actor and director names, genres data to make these recommendations. To achieve this, I used [cosine similarity](https://www.machinelearningplus.com/nlp/cosine-similarity/) metric for all movies to to measure the distance between the embeddings which is needed for finding similarity between two movies. For that I created a new column named `combined_features` in the dataset which includes all the features I want to find the similarity score between items.  
   
   
 ## How to run the project?
