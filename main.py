@@ -18,7 +18,7 @@ def create_sim():
     count_matrix = pickle.load(open('cosine_similarity.pickle', 'rb'))
 
     # creating a similarity score matrix
-    sim = cosine_similarity(count_matrix)
+    sim = cosine_similarity(count_matrix, count_matrix)
     return df, sim
 
 
